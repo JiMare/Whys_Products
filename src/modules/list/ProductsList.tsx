@@ -2,7 +2,7 @@ import { useNavigate, useSearch } from '@tanstack/react-router';
 import { useState } from 'react';
 import { useProducts } from '@/hooks/useProducts';
 import { Pagination } from './Pagination';
-import { Skeleton } from '@/components/ui/Skeleton';
+import { Skeleton } from '@/components/ui/skeleton';
 import { ProductCard } from './ProductCard';
 import { LIMIT, ROUTES } from '@/lib/constants';
 

@@ -1,5 +1,5 @@
 import { Layout } from '@/components/Layout';
-import { Skeleton } from '@/components/ui/Skeleton';
+import { Skeleton } from '@/components/ui/skeleton';
 import { useProductDetail } from '@/hooks/useProductDetail';
 import { raiseError } from '@/lib/utils';
 import { ProductDetailCard } from '@/modules/detail/ProductDetailCard';
