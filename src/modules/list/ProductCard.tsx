@@ -1,6 +1,5 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/Card';
 import { ROUTES } from '@/lib/constants';
-import { countRating } from '@/lib/utils';
 import { Product } from '@/schemas/product';
 import { useNavigate } from '@tanstack/react-router';
 import { Star } from 'lucide-react';
@@ -24,7 +23,7 @@ export const ProductCard = ({ product }: Props) => {
         <CardTitle className="line-clamp-1">{product.title}</CardTitle>
         <CardDescription className="flex items-center gap-1">
           <Star className="h-4 w-4 text-yellow-500" />
-          <span>{countRating(product.reviews.map((review) => review.rating))}</span>
+          <span>{product.rating}</span>
           <span className="text-gray-400 text-xs">({product.reviews.length} reviews)</span>
         </CardDescription>
       </CardHeader>
