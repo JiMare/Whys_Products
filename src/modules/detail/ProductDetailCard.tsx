@@ -64,6 +64,13 @@ export const ProductDetailCard = ({ product }: Props) => {
           <div className="flex flex-col gap-2">
             <span className="text-sm font-medium text-gray-700 bg-gray-100 px-2 py-1 rounded">{product.warrantyInformation}</span>
             <span className="text-sm font-medium text-gray-700 bg-gray-100 px-2 py-1 rounded">{product.shippingInformation}</span>
+            <span
+              className={`text-sm font-medium px-2 py-1 rounded ${
+                product.availabilityStatus === 'In Stock' ? 'text-green-700 bg-green-100' : 'text-red-700 bg-red-100'
+              }`}
+            >
+              {product.availabilityStatus}
+            </span>
           </div>
         </div>
       </CardContent>
